@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Comunidade Dev</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Estilos para página de login de comunidade dev */
+
+:root {
+    --primary-color: #3498db;
+    --primary-hover: #2980b9;
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #333333;
+    --border-color: #e1e5eb;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --success-color: #2ecc71;
+    --font-main: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    line-height: 1.6;
+    padding: 20px;
+    background-image: radial-gradient(circle at 30% 20%, rgba(52, 152, 219, 0.05) 0%, transparent 50%),
+                      radial-gradient(circle at 70% 80%, rgba(46, 204, 113, 0.05) 0%, transparent 50%);
+  }
+  
+  .container {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  .links {
+    margin-top: 1rem;
+  }
+  
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+  }
+  
+  .code-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #888;
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 1.5rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <span class="code-badge">&lt;/&gt;</span>
+    <h2>Login</h2>
+    <form method="POST" action="/login">
+      <div class="input-group">
+        <label for="username">Usuário</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="links">
+      <a href="/cadastro">Cadastrar novo usuário</a>
+    </div>
+  </div>
+</body>
+</html>
