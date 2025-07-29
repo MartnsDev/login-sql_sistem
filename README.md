@@ -39,7 +39,7 @@ const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',    // substitua pelo seu usuário do MySQL
   password: '',    // substitua pela sua senha
-  database: 'login_system'
+  database: '     // Coloque o nome da database
 });
 
 db.connect((err) => {
@@ -54,7 +54,7 @@ module.exports = db;
 </code></pre>
 
 <h3>Crie a tabela de usuários</h3>
-<pre><code>CREATE DATABASE login_system;
+<pre><code>CREATE DATABASE "Oque Você quiser";
 
 USE login_system;
 
@@ -84,7 +84,7 @@ CREATE TABLE users (
 <h2>📎 Contato</h2>
 <p>Matheus Martins<br>
 🔗 <a href="https://linkedin.com/in/matheusmartnsdeveloper" target="_blank">LinkedIn</a><br>
-💻 <a href="https://github.com/MartnsProjetos" target="_blank">GitHub</a></p>
+💻 <a href="https://github.com/MartnsDev" target="_blank">GitHub</a></p>
 
 <hr>
 
