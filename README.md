@@ -20,7 +20,7 @@
 
 <h3>1. Clone o repositório</h3>
 <pre><code>git clone https://github.com/MartnsDev/https://github.com/MartnsProjetos/login-sql_sistem.git
-cd seu-repo
+cd seu-repositorio ou pasta
 </code></pre>
 
 <h3>2. Instale as dependências</h3>
