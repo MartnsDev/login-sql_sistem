@@ -19,7 +19,7 @@
 <h2>🚀 Como Instalar e Rodar o Projeto</h2>
 
 <h3>1. Clone o repositório</h3>
-<pre><code>git clone https://github.com/seu-usuario/seu-repo.git
+<pre><code>git clone https://github.com/MartnsProjetos/https://github.com/MartnsProjetos/login-sql_sistem.git
 cd seu-repo
 </code></pre>
 
