@@ -56,7 +56,7 @@ module.exports = db;
 <h3>Crie a tabela de usuários</h3>
 <pre><code>CREATE DATABASE "Oque Você quiser";
 
-USE login_system;
+USE "Database que voce escolheu";
 
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
